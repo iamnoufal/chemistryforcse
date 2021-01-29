@@ -12,6 +12,7 @@ if ('serviceWorker' in navigator) {
 
 let deferredPrompt;
 var ath=document.querySelector('.ath');
+var button=document.querySelector(".ath-btn");
 ath.style.display="none";
 
 window.addEventListener('beforeinstallprompt', (e) => {
