@@ -23,7 +23,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   ath.style.display="block";
   // Update UI notify the user they can install the PWA
   
-  ath.addEventListener('click', (e) => {
+  button.addEventListener('click', (e) => {
   // Hide the app provided install promotion
   ath.style.display="none";
   // Show the install prompt
