@@ -1,15 +1,21 @@
 {
-  "short_name": "Chemistry",
-  "name": "Chemistry for CSE",
+  "short_name": "Weather",
+  "name": "Weather: Do I need an umbrella?",
   "icons": [
     {
       "src": "icon/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "icon/android-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": "rahman24.github.io/chemistryforcse",
-  "background_color": "#3367D6",
+  "start_url": "https://rahman24.github.io/chemistryforcse/",
+  "background_color": "#4d084d",
   "display": "standalone",
-  "theme_color": "#3367D6"
+  "scope": "/",
+  "theme_color": "#4d084d"
 }
