@@ -6,15 +6,10 @@
       "src": "icon/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "/icon/android-icon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
     }
   ],
   "start_url": "rahman24.github.io/chemistryforcse",
   "background_color": "#3367D6",
   "display": "standalone",
-  "theme_color": "#3367D6",
+  "theme_color": "#3367D6"
 }
