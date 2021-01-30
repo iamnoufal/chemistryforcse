@@ -3,19 +3,18 @@
   "name": "Chemistry for CSE",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "icon/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "720x720"
     }
   ],
   "start_url": "https://rahman24.github.io/chemistryforcse/",
   "background_color": "#4d084d",
   "display": "standalone",
-  "scope": "/",
   "theme_color": "#4d084d"
 }
