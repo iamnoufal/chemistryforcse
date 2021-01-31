@@ -3,7 +3,7 @@
   "name": "Chemistry for CSE",
   "icons": [
     {
-      "src": "icon/android-icon-192x192.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
