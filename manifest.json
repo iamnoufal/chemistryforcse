@@ -3,14 +3,14 @@
   "name": "Chemistry for CSE",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.png",
+      "src": "favicon-512x512.png",
       "type": "image/png",
-      "sizes": "720x720"
+      "sizes": "512x512"
     }
   ],
   "start_url": "https://rahman24.github.io/chemistryforcse/",
