@@ -15,6 +15,6 @@
   ],
   "start_url": "https://rahman24.github.io/chemistryforcse/",
   "background_color": "#4d084d",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#4d084d"
 }
