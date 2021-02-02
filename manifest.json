@@ -3,12 +3,12 @@
   "name": "Chemistry for CSE",
   "icons": [
     {
-      "src": "flask-icon.png",
+      "src": "flask-test.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "flask.png",
+      "src": "flask-test.png",
       "type": "image/png",
       "sizes": "512x512"
     }
