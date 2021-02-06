@@ -17,6 +17,7 @@
       font-size: 18px;
       text-align: center;
       border-radius:0;
+      text-align: left;
     }
     .closebtn {
       margin-left: 15px;
@@ -103,12 +104,11 @@
   </p>
   <div class="offline">
     <span class="closebtn">&times;</span>
-    Hmm.....Looks like you are offline. <a onclick="location.reload()">Click here</a> to reload.
+    Hmm.....Looks like you are offline. <a href="#" onclick="location.reload()">Click here</a> to reload.
   </div>
   <script>
     function offline() {
-      comfirm("Looks like you are offline. Do you want to reload");
-      if (confirm) {location.reload()}
+      if (confirm("Looks like you're offline. Do you want to reload?")) {location.reload()}
     }
 
     var close = document.getElementsByClassName("closebtn");
@@ -121,5 +121,6 @@
         setTimeout(function(){ div.style.display = "none"; }, 600);
       }
     }
+  </script>
 </body>
 </html>
