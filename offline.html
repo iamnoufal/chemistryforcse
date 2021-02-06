@@ -106,7 +106,10 @@
     Hmm.....Looks like you are offline. <a onclick="location.reload()">Click here</a> to reload.
   </div>
   <script>
-    function offline() {alert("Looks like you are offline. <a onclick="location.reload()">Click here</a> to reload");}
+    function offline() {
+      comfirm("Looks like you are offline. Do you want to reload");
+      if (confirm) {location.reload()}
+    }
 
     var close = document.getElementsByClassName("closebtn");
     var i;
