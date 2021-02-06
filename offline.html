@@ -13,10 +13,21 @@
       position: fixed;
       bottom: 0;
       background-color: #4d084d;
+      transition: opacity 0.6s;
       font-size: 18px;
       width: 100%;
       text-align: center;
-      margin: 0;
+      border-radius:0;
+    }
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
     }
   </style>
   <title>Chemistry for CSE</title>
@@ -33,10 +44,10 @@
     Department of Chemistry,<br>
     Government College of Engineering, Salem.<br><br>
     Find the recorded chemistry classes below<br>
-    Open in <a onclick=offline()">YouTube</a><br>
+    Open in <a onclick="offline()">YouTube</a><br>
     Share this webpage with your friends through <a href="https://wa.me/?text=https://rahman24.github.io/chemistryforcse/%0d%0aHey%20guys,%20learn%20chemistry%20with%20me%20by%20watching%20the%20recorded%20classes">WhatsApp</a>
   </div>
-  <div onclick=offline()">
+  <div onclick="offline()">
       <p>Aromatic Compounds</p>
       <ol style="text-align:left">
         <li>RS Notation and Basics of Confirmation</li>
@@ -45,7 +56,7 @@
         <li>Electrophilic Aromatic Substitution, Markovnikov's Rule, all Aliphatic reaction Mechanisms</li>
       </ol>
   </div>
-  <div onclick=offline()">
+  <div onclick="offline()">
       <p>Thermodynamics</p>
       <ol style="text-align:left">
         <li>Systems and Surroundings and First law of thermodynamics<</li>
@@ -53,7 +64,7 @@
         <li>Sums based on Thermodynamics</li>
       </ol>
   </div>
-  <div onclick=offline()">
+  <div onclick="offline()">
       <p>Electrochemistry</p>
       <ol style="text-align:left">
         <li>An Introduction</li>
@@ -65,13 +76,13 @@
     Faculty:<br>
     Prof. A. Ramachandran<br><br>
     Meeting platform:<br>
-    <a onclick=offline()">Google Meet</a><br><br>
+    <a onclick="offline()">Google Meet</a><br><br>
     Recording platform:<br>
-    <a onclick=offline()">Google Meet</a><br><br>
+    <a onclick="offline()">Google Meet</a><br><br>
     Storage platform:<br>
-    <a onclick=offline()">Google Cloud</a><br><br>
+    <a onclick="offline()">Google Cloud</a><br><br>
     Embedding platform:<br>
-    <a onclick=offline()">Google Drive</a><br><br>
+    <a onclick="offline()">Google Drive</a><br><br>
     Hosted through:<br>
     <a onclick=offline()">GitHub</a>
   </div>
@@ -86,11 +97,27 @@
     <a href="https://wa.me/+918144188790?text=Hey Noufal,%0d%0arahman24.github.io/chemistryforcse%0d%0aI have an idea to make the webpage awesome">WhatsApp</a><br>
   </div>
   <p class="end" style="float:left">
-    Courtesy : <a onclick=offline()">uGitHub</a>
+    Courtesy : <a onclick="offline()">uGitHub</a>
   </p>
   <p class="end" style="text-align:right;float:right">
     Copyrights reserved ©
   </p>
-  <p class="offline">Hmm.....Looks like you are offline</p>
+  <div class="offline">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Hmm.....Looks like you are offline. <a onclick="location.reload()">Click here</a> to reload.
+  </div>
+  <script>
+    function offline() {alert("Looks like you are offline. <a onclick="location.reload()">Click here</a> to reload");}
+
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 400);
+      }
+    }
 </body>
 </html>
