@@ -10,16 +10,15 @@
   <script src="index.js"></script>
   <style>
     .offline {
+      width : 59.2%;
+      background-color: #4d084d;
+      font-size: 30px;
+      text-align: left;
+      padding: 2% 0;
+      margin: 0vw 19.8%;
       position: fixed;
       bottom: 5px;
-      background-color: #4d084d;
-      transition: opacity 0.6s;
-      font-family: 
-      font-size: 18px;
-      border-radius:0;
-      text-align: left;
-      margin: 4px;
-      width: 100%;
+      z-index: 1
     }
     .closebtn {
       margin-left: 55px;
@@ -104,7 +103,7 @@
   <p class="end" style="text-align:right;float:right">
     Copyrights reserved ©
   </p>
-  <div class="header offline">
+  <div class="offline">
     <p class="closebtn">&times;</p>
     Hmm.......Looks like you are offline.<br><a href="#" onclick="location.reload()">Click here</a> to reload.
   </div>
