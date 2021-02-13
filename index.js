@@ -10,31 +10,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-let deferredPrompt;
-var ath=document.querySelector('.ath');
-var button=document.querySelector(".ath-btn");
-ath.style.display="none";
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  ath.style.display="block";
-  // Update UI notify the user they can install the PWA
-  
-  button.addEventListener('click', (e) => {
-  // Hide the app provided install promotion
-  ath.style.display="none";
-  // Show the install prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice.then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the install prompt');
-    } else {
-      console.log('User dismissed the install prompt');
-    }
-  });
-});
-});
+var deferredPrompt;
+function a2hs(){
+  btnAdd.style.display="none",deferredPrompt.prompt(),deferredPrompt.userChoice.then(e=>{"accepted"===e.outcome?console.log("User accepted the A2HS prompt"):console.log("User dismissed the A2HS prompt"),deferredPrompt=null})
+}
+window.addEventListener("beforeinstallprompt",e=>{console.log("beforeinstallprompt"),e.preventDefault(),deferredPrompt=e,btnAdd.style.display="block"}),window.addEventListener("appinstalled",e=>{console.log("a2hs","installed")});
