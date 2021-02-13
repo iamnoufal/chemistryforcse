@@ -34,7 +34,7 @@
       width: 100%;
       height: 480px;
     }
-    install {
+    .install {
       width : 59.2%;
       background-color: #4d084d;
       font-size: 30px;
