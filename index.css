@@ -34,6 +34,17 @@
       width: 100%;
       height: 480px;
     }
+    install {
+      width : 59.2%;
+      background-color: #4d084d;
+      font-size: 30px;
+      text-align: center;
+      padding: 2% 0;
+      margin: 0vw 19.8%;
+      position: fixed;
+      bottom:-5px;
+      z-index: 1;
+    }
     .end {font-size:15px;margin:0 20%}
     @media screen and (max-width:700px) {
       body {background-image:url("index.png")}
@@ -41,5 +52,6 @@
       div {margin: 4px}
       .a {margin-top: 27%}
       iframe {height:210px}
+      .install {width:94.5%;margin:4px;padding:0}
       .end {margin: 4px}
     }
