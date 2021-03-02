@@ -9,6 +9,62 @@
   <link rel="manifest" href="manifest.json">
   <script src="index.js"></script>
   <style>
+    * {box-sizing:border-box}
+    body {
+      background-image: url("index1.png");
+      background-attachment: fixed;
+      background-size: contain;
+      color: white;
+      font-family: "Quicksand", sans-serif;
+      font-size: 20px;
+    }
+    .header {
+      width : 59.2%;
+      font-family: "Sofia", sans-serif;
+      background-color: #4d084d;
+      font-size: 30px;
+      text-align: center;
+      padding: 2% 0;
+      margin: 0vw 19.8%;
+      position: fixed;
+      top:0;
+      z-index: 1
+    }
+    div {
+      background-color: rgba(105,105,105,0.8);
+      margin: 0 20%;
+      margin-bottom: 5px;
+      padding: 3% 2%;
+      border-radius: 10px;
+      text-align: center;
+    }
+    a {color:white}
+    .a{padding:5%; font-size: 25px;margin-top:9.5%;text-align:justify}
+    p {font-size: 25px}
+    iframe {
+      width: 100%;
+      height: 480px;
+    }
+    .install {
+      background-color: #4d084d;
+      font-size: 24px;
+      text-align: center;
+      padding: 2% 6%;
+      position: fixed;
+      bottom:0px;
+      right: 12px;
+      border-radius:35px;
+      z-index: 1;
+    }
+    .end {font-size:15px;margin:0 20%}
+    @media screen and (max-width:700px) {
+      body {background-image:url("index.png")}
+      .header {width:94.5%;margin:4px;padding:0}
+      div {margin: 4px}
+      .a {margin-top: 27%}
+      iframe {height:210px}
+      .end {margin: 4px}
+    }
     .offline {
       width : 59.2%;
       background-color: #4d084d;
